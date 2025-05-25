@@ -8,37 +8,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
   <!-- Canvas-Confetti -->
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <!-- Instagram Embed API -->
+  <script async defer src="https://www.instagram.com/embed.js"></script>
 </head>
-<script async defer src="https://www.instagram.com/embed.js"></script>
 <body>
   <!-- SPEAKER BUTTON -->
   <button id="mute-btn" class="mute-btn" aria-label="Toggle music">
-    <img
-      id="mute-icon"
-      src="assets/icons/speaker-muted.svg"
-      alt="Sound off"
-    >
+    <img id="mute-icon" src="assets/icons/speaker-muted.svg" alt="Sound off">
   </button>
   <span id="music-hint" class="hint">Press to start vibin' ^_^</span>
 
   <div class="container">
     <h1>Happy Birthday, Chewie!</h1>
-    <p class="wish">
-      Wishing you endless happiness,<br>
-      bright moments, and all your dreams come true!
-    </p>
-
-    <!-- Start chillin' button with Instagram icon -->
+    
+    <!-- Start chillin' button -->
     <button id="surpriseBtn" class="btn-with-icon">
-      <img
-        src="assets/icons/instagram.svg"
-        alt="Instagram"
-        class="btn-icon"
-      />
+      <img src="assets/icons/instagram.svg" alt="Instagram" class="btn-icon" />
       Start chillin' :)
     </button>
 
-    <!-- Hidden surprise block -->
+    <!-- Скрытый контейнер для блоков Instagram -->
     <div id="surprise" class="hidden">
       <div id="reels-container" class="reels-grid"></div>
       <button id="load-row-btn" class="load-row-btn">More dopamine!!!</button>
