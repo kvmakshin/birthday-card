@@ -1,0 +1,138 @@
+/* Base page & container */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background: #FFD1DC; /* pastel pink */
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 5% auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  margin-bottom: 0.2em;
+}
+
+.wish {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 1.5em;
+}
+
+/* Speaker button */
+.mute-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.mute-btn img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hint bubble */
+.hint {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: rgba(255,255,255,0.9);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #555;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  animation: fadeIn 0.4s ease-out;
+  z-index: 1000;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Surprise hidden state */
+.hidden {
+  display: none;
+}
+
+/* Сетка 4 колонки, центрируем карточки и задаём отступы */
+.reels-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+  justify-items: center; /* центрирование по горизонтали */
+}
+
+/* Опционально: ограничиваем высоту карточки */
+.instagram-media {
+  /* height: 500px; overflow: hidden; */
+}
+
+/* iframe займет всю ячейку грида целиком */
+.reels-grid iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Load next row button */
+.load-row-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ff4081;
+  color: #fff;
+  transition: background 0.2s;
+}
+.load-row-btn:hover {
+  background: #e73370;
+}
+
+/* Buttons with icons */
+.btn-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.8em 1.5em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  background: #ff4081;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.btn-with-icon:hover {
+  transform: scale(1.05);
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
