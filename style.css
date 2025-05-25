@@ -72,19 +72,27 @@ h1 {
   display: none;
 }
 
-/* Сетка 4 колонки, центрируем карточки и задаём отступы */
+/* --- UPDATED: Grid & Instagram embeds --- */
+/* 1) Четыре колонки фиксированной ширины, весь грид по центру */
 .reels-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 320px);
   gap: 20px;
-  max-width: 1200px;
   margin: 20px auto;
-  justify-items: center; /* центрирование по горизонтали */
+  justify-content: center;
 }
 
-/* Опционально: ограничиваем высоту карточки */
+/* 2) Ограничиваем ширину блока Instagram и убираем дефолтные отступы */
 .instagram-media {
-  /* height: 500px; overflow: hidden; */
+  width: 100% !important;
+  max-width: 320px !important;
+  margin: 0 !important;
+}
+
+/* 3) Задаём карточке минимальную высоту, чтобы весь контент влезал */
+.instagram-media > div {
+  min-height: 500px;
+  overflow: hidden;
 }
 
 /* iframe займет всю ячейку грида целиком */
