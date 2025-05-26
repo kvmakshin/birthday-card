@@ -41,10 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const loadRowBtn    = document.getElementById('load-row-btn');
   const reelShortcodes = [
     'DJKYcxhBolo','DJIgfyDsuIv','DJGgXhYI9B6','DJEYvRIgbNn',
-    'DJHTV8qpyfb','DGqwjeZygKq','DE1yHAoS39q','DJGa2ejslic',
-    'DJDZtDbutIT','DJE7-RgTy5p','DFNmxW0vE7a','DHOpqj5v_K4',
-    'DHJUCHxNvra','DIsjRBYNefB','DJES9XIS4L3','DI_BNEMIiLi',
-    'DJKByrlo82m','DEuwCu4xMD5','DJwbEGBSut1','DH1AyppsIy4',
+    'DJHTV8qpyfb','DGqwjeZygKq','DE1yHAoS39q','DKFkqenMph3',
+    'DJDZtDbutIT','DI6gUk6swXj','DFNmxW0vE7a','DKCqCLKIMIf',
+    'DHJUCHxNvra','DIsjRBYNefB','DJES9XIS4L3','DEnemlQS5Eo',
+    'DJKByrlo82m','DEuwCu4xMD5','DJwbEGBSut1','DHyO1RnpWjY',
     'DFog1LDo2nn','DDvkHExMluc','DE7KGHXt3R0','DC7Xkyxpu72',
   ];
   const reelsPerRow = 4;
